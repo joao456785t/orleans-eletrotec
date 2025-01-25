@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="eletricista.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Orleans Eletricista</title>
+</head>
+
+<body>
+    <header>
+        <h1>Orleans Eletricista - O Melhor da Região</h1>
+        <h3 id="lema">Faço tudo que os clientes pedem!</h3>
+        <h3 id="estela">&#9733;&#9733;&#9733;&#9733;&#9733;</h3>
+    </header>
+
+    <!-- Loader -->
+    <div class="loader-wrap">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+    </div>
+
+    <main>
+        <p id="serviço">Serviço de 100% qualidade &#9786;</p>
+
+        <section>
+            <h2>Meus Serviços</h2>
+            <ul>
+                <li>Montagem e desmontagem de torres</li>
+                <li>Instalações de fios</li>
+                <li>Instalação de câmeras de segurança</li>
+                <li>Instalação de tomadas (normais e inteligentes)</li>
+                <li>Montagem de cabos de rede</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Quem sou eu?</h2>
+            <p id="quemsoueu">
+                Olá, me chamo Orleans ou Leo. Estou há mais de 24 anos na profissão. Aprendi essa profissão com meu pai, Florisvado. Ele sempre confiava em mim.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Meu número &#9742;: <a   id="cell" href="tel:+5573988145913">73988145913</a></h4>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
